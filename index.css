@@ -1,366 +1,355 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* ===============================
+   LOGESH KUMAR — Portfolio CSS
+   Designed to impress HR visually 💼✨
+================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
-  font-family: "Poppins", sans-serif;
-}
-nav h1 {
-  color: white;
-  padding-right: 91px;
-  font-size: 24px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  line-height: 1.6;
 }
 
-span {
-  color: red; /* accent color for initials */
-  font-weight: bold;
-}
-
-/* NAVBAR */
+/* ---------- NAVBAR ---------- */
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;  /* centers the menu */
-  background: black; /* professional blue gradient */
-  padding: 15px 25px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
+  background: rgba(15, 32, 39, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
-/* NAV LIST */
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 40px;
+nav h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-nav ul li {
-  font-size: 18px;
-  font-weight: 600;
+nav h1 span {
+  color: #00e0ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-/* HOVER EFFECT */
 nav ul li a:hover {
-    border-radius: 15px;
-    transform: scale(1.1);
-  background: red; /* light highlight */
-  /* color: black; accent color on hover */
+  color: #00e0ff;
 }
 
-button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    background: #007bff;
-    color: white;
-    cursor: pointer;
-}
-
-
+/* ---------- HERO SECTION ---------- */
 #tittle {
-  display: flex;                 /* enable flexbox */
-  justify-content: center;       /* horizontal center */
-  align-items: center;           /* vertical center */
-  flex-direction: column;        /* stack h1 one below another */
-  height: 100vh;                 /* cover full page height */
-  width: 100%;   
-  font-size: 25px;                /* cover full page width */
-  text-align: center;            /* center text inside */
-  background: #f0f0f0;           /* optional background color */
+  text-align: center;
+  padding: 9rem 1rem 5rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 #tittle h1 {
-  padding: 15px;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 #tittle h2 {
-  padding: 15px;
-  color: blue;
+  font-weight: 400;
+  color: #c0dfff;
+  margin-top: 0.5rem;
 }
 
-/* //tittle  */
 #tittle button {
-  margin-top: 20px;
-  font-size: 18px;
-  background: red; /* button background color */
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
   border: none;
-  color: black;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00e0ff, #0072ff);
+  color: #fff;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
+
 #tittle button:hover {
-  background: blue;/* button hover color */
-  color: white;
   transform: scale(1.05);
+  background: linear-gradient(90deg, #00c3ff, #004eff);
 }
 
-
-#objective {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 30px;
-  background: white;                 /* box background */
-  border: 2px solid #007bff;         /* blue border */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  transition: transform 0.3s ease box-shadow 0.3s ease;
+/* ---------- SECTIONS ---------- */
+section, #objective, #skills {
+  padding: 4rem 10%;
 }
 
-#objective:hover {
-  cursor: pointer;
-  transform: scale(1.03);            
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00e0ff;
+  border-bottom: 2px solid #00e0ff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
-#objective h2 {
-  text-align: center;
-  font-size: 28px;
-  color: #007bff;
-  margin-bottom: 15px;
+p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #dcecff;
 }
 
-#objective p {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #333;
-}
-
-#skills {
-  text-align: center;
-  padding: 80px 40px;
-  background: #f8f9fa; /* soft HR-friendly background */
-  border-radius: 20px;
-}
-
+/* ---------- SKILLS SECTION ---------- */
 .skillstitle {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  color: #2c3e50; /* dark professional title */
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
 }
 
 .skill-card {
-  background: #fff;
-  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  border: 2px solid #e0e0e0;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+  padding: 2rem 1rem;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .skill-card:hover {
-  transform: translateY(-8px);
-  border-color: #3498db; /* HR-friendly hover color */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 224, 255, 0.3);
 }
 
 .skill-icon {
-  font-size: 80px;   /* bigger icons */
-  margin-bottom: 15px;
-  color: blue;    /* soft blue for HR-friendly */
+  font-size: 3rem;
+  color: #00e0ff;
+  margin-bottom: 1rem;
 }
 
-.skill-card h3 {
-  padding: 15px;
-  font-size: 20px;
-  color: black;
-  margin: 0;
-}
-
-/* //project */
-#projects {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 30px;
-  background: white;                 /* box background */
-  border: 2px solid #007bff;         /* blue border */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  transition: transform 0.3s ease box-shadow 0.3s ease;
-}
-
-#projects h2 {
-  text-align: center;
-  color: #007bff;
-}
-#projects:hover {
-  cursor: pointer;
-  transform: scale(1.03);            
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
-}
-
+/* ---------- PROJECTS ---------- */
 #projects p {
-  margin-top: 15px
+  margin: 1rem 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: background 0.3s ease;
 }
 
-#education {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 30px;
-  background: white;                 /* box background */
-  border: 2px solid #007bff;         /* blue border */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  transition: transform 0.3s ease box-shadow 0.3s ease;
+#projects p:hover {
+  background: rgba(0, 224, 255, 0.15);
 }
 
-#education h2 {
-  text-align: center;
-  color: #007bff;
-}
-#education:hover {
-  cursor: pointer;
-  transform: scale(1.03);            
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
+#projects a {
+  color: #00e0ff;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-#education h3 {
-  margin-top: 15px;
-  gap: 15px;
+#projects a:hover {
+  text-decoration: underline;
 }
 
-
-    .internship-container {
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-
-    .internship {
-      display: flex;
-      align-items: center;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    /* Alternate layout */
-    .internship:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-
-    .internship img {
-      width: 500px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin: 0 20px;
-    }
-
-    .internship-content {
-      flex: 1;
-    }
-
-    .internship-content h3 {
-      margin: 0;
-      color: red;
-    }
-
-    .internship-content p {
-      margin: 8px 0;
-      color: #555;
-      line-height: 1.5;
-    }
-#internships h2 {
-  text-align: center;
-  color: blue;
+/* ---------- EDUCATION ---------- */
+.edu-item {
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #00e0ff;
+  transition: 0.3s;
 }
-.section-title {
-  padding: 15px;
-  margin: 15px;
-  text-align: center;
+
+.edu-item:hover {
+  background: rgba(0, 224, 255, 0.1);
+  transform: translateX(10px);
 }
-#contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 80%;
-}
-#contact .contact-items {
+
+/* ---------- INTERNSHIPS ---------- */
+.internship-container {
   display: flex;
-	/* max-width: 400px; */
-	width: 100%;
-}
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
-}
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
-}
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-#contact .contact-info h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
-}
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 500;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-footer {
-  background-color: #222; /* Dark background */
-  color: #fff; /* White text */
+.internship {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 224, 255, 0.2);
+}
+
+.internship img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.internship-content h3 {
+  color: #00e0ff;
+}
+
+/* ---------- CONTACT SECTION (One-Line Content) ---------- */
+#contact {
+  background: #0b1e2d;
   text-align: center;
-  padding: 20px 0;
-  position: relative;
-  font-family: Arial, sans-serif;
+  padding: 4rem 1rem;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.section-title span {
+  color: #00e0ff;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  width: 300px;
+  min-height: 220px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:hover {
+  background: rgba(0, 224, 255, 0.08);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 224, 255, 0.2);
+}
+
+.contact-item .icon img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+.contact-info h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* ✅ Keep numbers, email & address on one line */
+.contact-info h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #00e0ff;
+  white-space: nowrap; /* prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  line-height: 1.4;
+}
+
+/* For smaller screens, allow wrapping */
+@media (max-width: 768px) {
+  .contact-info h2 {
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #061018;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer p {
-  margin: 0 0 10px 0;
-  font-size: 1rem;
-}
-
-footer a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: 0.3s ease;
-  display: inline-block;
-}
-
-footer a:hover {
-  color: #0a66c2; /* LinkedIn blue on hover */
+  margin-bottom: 0.5rem;
+  color: #aaa;
 }
 
 footer i {
-  vertical-align: middle;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: #00e0ff;
+  transition: transform 0.3s ease;
+}
+
+footer i:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #tittle h1 {
+    font-size: 2.2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .internship {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .internship img {
+    margin-bottom: 1rem;
+  }
 }
